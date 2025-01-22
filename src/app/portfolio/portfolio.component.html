@@ -1,0 +1,97 @@
+<div class="portfolio-page">
+     
+    <section class="hero" >
+      <div class="socials">
+        <div>
+          <button class="button" (click)="goToContact()">Contact Me</button>
+        </div>
+        <div>
+          <a href="https://github.com/aleena2121" class="socials-link"> <i class="fi fi-brands-github github"></i> </a>
+          <a href="https://www.linkedin.com/in/aleena-sara-mathews-4b7228249/" class="socials-link"> <i class="fi fi-brands-linkedin linkedin"></i> </a>
+        </div>
+        
+      </div>
+        <div>
+            <h1>Hi, I am Aleena Sara Mathews</h1>
+            <p>Web Developer</p>
+        </div>
+      </section>
+      
+      <br>
+      
+      <section class="about" >
+        <div class="icon">
+            <img src="./assets/images/panda.png" alt="panda" class="panda">
+        </div>
+        <p class="para">
+        I'm a web developer passionate about crafting clean, efficient, and user-friendly websites. I love bringing ideas to life through thoughtful design and powerful code, ensuring every detail contributes to a smooth, engaging user experience.
+        <br>
+        I’m always excited to take on new challenges and push the boundaries to create innovative, impactful solutions.</p>
+    </section>
+
+ 
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <div class="skill-tags">
+        <span>Angular</span>
+        <span>Python</span>
+        <span>TypeScript</span>
+        <span>JavaScript</span>
+        <span>.NET</span>
+        <span>C++</span>
+        <span>C</span>
+        <span>SQL</span>
+        <span>Agile</span>
+        <span>AI</span>
+        <span>Machine Learning</span>
+
+      </div>
+     </section>
+
+    <br>
+
+    <section class="experience" >
+      <h2>Work Experience</h2>
+      <div class="tvs">
+        <div>
+          <h4>TVS Motor Company, Digital Engineer - Intern (August 2024 - December 2024)</h4>
+          <p>I developed user-friendly web pages for internal use utilizing Angular and .NET, contributing to multiple projects by creating and enhancing front-end components. Additionally, I provided support for PowerApps applications, streamlining workflows and improving usability, while gaining valuable exposure to an Agile environment.</p>
+        </div>
+        <div>
+          <img src="./assets/images/panda1.png" alt="panda" class="panda1">
+        </div>
+      </div>
+      </section>
+
+    <br>
+
+    <section class="my-projects">
+      <h2>My Projects</h2>
+      <article *ngFor="let project of projects" class="article-wrapper">
+        <a [href]="project.link" target="_blank" class="project-link">
+          <div class="container-project">
+            <img [src]="project.image" alt="{{ project.name }}">
+          </div>
+          <div class="project-info">
+            <div class="flex-pr">
+              <div class="project-title text-nowrap">{{ project.name }}</div>
+              <div class="project-hover">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2.5em" height="2.5em" stroke-linejoin="round" stroke-linecap="round" viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor">
+                  <line y2="12" x2="19" y1="12" x1="5"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </div>
+            </div>
+            <p class="project-description">{{ project.description }}</p>
+          </div>
+        </a>
+      </article>
+    </section>
+    
+        
+    <footer class="footer">
+      <p>aleena</p>
+    </footer>
+  </div>
+  
