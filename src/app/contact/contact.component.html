@@ -1,46 +1,47 @@
 <body>
-    
-    <div class="contact-container">
+    <div class="container">
+      <img src="./assets/images/panda-contact.png" alt="panda" class="panda">
+      <div class="contact-container">
         <h2>Contact Me</h2>
-        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-        <div>
+        <!-- (ngSubmit)="send()" -->
+        <form action="javascript:void(0)" (submit)="send()" [formGroup]="contactForm">
+          <div>
             <label for="name">Name</label>
             <input id="name" formControlName="name" type="text" placeholder="Your Name">
             <small *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">
-            Name is required (min 3 characters).
+              Name is required (min 3 characters).
             </small>
-        </div>
-    
-        <div>
+          </div>
+  
+          <div>
             <label for="email">Email</label>
             <input id="email" formControlName="email" type="email" placeholder="Your Email">
             <small *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched">
-            Valid email is required.
+              Valid email is required.
             </small>
-        </div>
-    
-        <div>
+          </div>
+  
+          <div>
             <label for="subject">Subject</label>
             <input id="subject" formControlName="subject" type="text" placeholder="Subject">
             <small *ngIf="contactForm.get('subject')?.invalid && contactForm.get('subject')?.touched">
-            Subject is required.
+              Subject is required.
             </small>
-        </div>
-    
-        <div>
+          </div>
+  
+          <div>
             <label for="message">Message</label>
             <textarea id="message" formControlName="message" placeholder="Your Message"></textarea>
             <small *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched">
-            Message must be at least 10 characters.
+              Message must be at least 10 characters.
             </small>
-        </div>
-        <div class="button">
+          </div>
+  
+          <div class="button">
             <button type="submit" [disabled]="contactForm.invalid">Send Message</button>
-        
-        </div>
+          </div>
         </form>
+      </div>
     </div>
-
-</body>
-
+  </body>
   
