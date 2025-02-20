@@ -27,7 +27,7 @@ label {
 }
 
 input, textarea {
-    width: 100%;
+    width: 95%;
     padding: 8px;
     margin-top: 5px;
     border: 2px solid #C890A7;
@@ -79,9 +79,26 @@ button:hover {
 
 
 .panda {
-    height: 180px;
-    width: 180px;
+    height: 150px;
+    width: 150px;
     padding-left: 450px;
-    margin-bottom: -59px;
-    margin-top: -30px;
+    margin-bottom: -40px;
+    margin-top: -40px;
   }
+
+
+  @media screen and (max-width: 650px) {
+    .contact-container {
+        /* width: 90%; */
+        width: 400px;
+        padding: 30px; 
+    }
+
+    .panda {
+        height: 120px; 
+        width: 120px;
+        margin-bottom: -34px;
+        padding-left: 330px;
+        
+    }
+}
