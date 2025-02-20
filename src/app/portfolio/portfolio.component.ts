@@ -24,6 +24,12 @@ export class PortfolioComponent {
       link: 'https://github.com/aleena2121/microplastic-detection-using-mobileNetV2'
     },
     {
+      name: 'Travel Journal',
+      description: 'A digital travel journal to capture and cherish your vacation memories with photos, places visited, and notes all in one place.',
+      image: 'assets/images/travel-journal.png',
+      link: 'https://github.com/aleena2121/Travel-Journal/'
+    },
+    {
       name: 'Simon Game',
       description: 'A JavaScript-based classic memory game with interactive UI.',
       image: 'assets/images/simon.png',

@@ -102,3 +102,20 @@ button:hover {
         
     }
 }
+
+
+@media screen and (max-width: 465px) {
+    .contact-container {
+        /* width: 90%; */
+        width: 300px;
+        padding: 30px; 
+    }
+
+    .panda {
+        height: 90px; 
+        width: 90px;
+        margin-bottom: -25px;
+        padding-left: 270px;
+        
+    }
+}
